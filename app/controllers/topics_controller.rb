@@ -56,7 +56,7 @@ private
     @topic = Topic.find(params[:id])
   end
 
-  def set_topic
+  def set_sub
     @sub = Sub.find(params[:sub_id])
   end
 
