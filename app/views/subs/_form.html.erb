@@ -1,0 +1,10 @@
+<h1><%= @sub.id ? 'Edit sub' : 'Create Sub' %> </h1>
+
+<%= form_for @sub do |f| %>
+  # form helper for rails
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true %>
+  # does front-end validation
+  
+  <%= f.submit %>
+<% end %>
